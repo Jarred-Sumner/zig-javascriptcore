@@ -2,10 +2,14 @@
 
 Seeing how to get [JavaScriptCore](https://developer.apple.com/documentation/javascriptcore/c_javascriptcore_api) to run inside Zig. Only works on macOS because it links `JavascriptCore.framework`.
 
+Run this:
+
 ```bash
 ZIG_SYSTEM_LINKER_HACK=1 zig build
 ./zig-out/bin/jsc
 ```
+
+It should output:
 
 ```bash
 Hello from JavaScript inside Zig
